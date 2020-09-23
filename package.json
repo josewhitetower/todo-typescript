@@ -1,0 +1,30 @@
+{
+  "name": "todo-typescript",
+  "version": "1.0.0",
+  "description": "A todo app build in Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc -w & tailwindcss build src/styles.css -o public/style.css & live-server public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josewhitetower/todo-typescript.git"
+  },
+  "keywords": [
+    "todo",
+    "typescript",
+    "tailwindcss",
+    "javascript"
+  ],
+  "author": "José Torreblanca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josewhitetower/todo-typescript/issues"
+  },
+  "homepage": "https://github.com/josewhitetower/todo-typescript#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "tailwindcss": "^1.8.10"
+  }
+}

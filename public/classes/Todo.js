@@ -12,8 +12,8 @@ export class Todo {
             `<input class="focus:outline-none bg-red-400 font-semibold mx-auto" type="text" value=${this.getTitle()}>` :
             `<p class="${this.isDone ? 'line-through' : ''}">${this.getTitle()}</p>`}
                 <div class="flex">
-                    <img src="/public/img/edit.svg" alt="" srcset="" class="w-4 cursor-pointer edit-icon">
-                    <img src="/public/img/delete.svg" alt="" srcset="" class="w-4 cursor-pointer ml-2 delete-icon">
+                    <img src="/img/edit.svg" alt="" srcset="" class="w-4 cursor-pointer edit-icon">
+                    <img src="/img/delete.svg" alt="" srcset="" class="w-4 cursor-pointer ml-2 delete-icon">
                 </div>
         </li>`;
         return todoTemplate;
