@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc -w & tailwindcss build src/styles.css -o public/style.css & live-server public"
+    "start": "tsc -w & tailwindcss build src/styles.css -o public/style.css & live-server public",
+    "build:css": "export NODE_ENV=production && tailwindcss build src/styles.css -o dist/style.css"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/josewhitetower/todo-typescript#readme",
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "live-server": "^1.2.1",
     "tailwindcss": "^1.8.10"
   }

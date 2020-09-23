@@ -4,12 +4,12 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: {
-    enabled: false,
-    content: ['./src/**/*.html'],
+    enabled: process.env.NODE_ENV === "production",
+    content: ['./public/*.html', './src/**/*.ts'],
   },
   theme: {
     extend: {},
   },
   variants: {},
   plugins: [],
-}
+};
