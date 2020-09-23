@@ -1,17 +1,51 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Todo Typescript</title>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <main class="max-w-lg mx-auto h-screen px-2">
+        <div
+        class="py-8 bg-red-500 text-center text-white font-sans rounded mt-8 shadow-2xl"
+        >
+        <h1 class="text-3xl uppercase font-thin mb-4">Todo List!</h1>
+        <ul class="TodoList">
+        </ul>
+        <form class="NewTodoForm flex justify-center p-4 mt-6">
+          <div>
+            <input
+              required=""
+              class="focus:outline-none h-12 text-black px-2 rounded-sm"
+              placeholder="New Todo..."
+              type="text"
+              name="title"
+            />
+          </div>
+          <button
+            class="border border-2 px-4 py-2 ml-2 rounded-sm hover:bg-red-400 uppercase focus:outline-none"
+          >
+            Add todo
+          </button>
+        </form>
+        <div class="flex justify-end mt-4 pr-4 items-baseline">
+          <input type="radio" id="all" value="all" name="list" class="mr-2" />
+          <label for="all">All</label>
+          <input type="radio" id="done" value="done" name="list" class="ml-8 mr-2" />
+          <label for="done">Done</label>
+          <input type="radio" id="undone" value="undone" name="list"class="ml-8 mr-2" />
+          <label for="undone">Undone</label>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js" type="module"></script>
+    <script>
+
+    </script>
+    </script>
   </body>
 </html>
